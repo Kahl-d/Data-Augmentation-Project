@@ -1,0 +1,27 @@
+Map:   0%|          | 0/7540 [00:00<?, ? examples/s]Map:  75%|███████▌  | 5679/7540 [00:00<00:00, 56601.67 examples/s]Map: 100%|██████████| 7540/7540 [00:00<00:00, 55764.70 examples/s]
+Map:   0%|          | 0/5028 [00:00<?, ? examples/s]Map: 100%|██████████| 5028/5028 [00:00<00:00, 56994.88 examples/s]
+Some weights of GPT2ForSequenceClassification were not initialized from the model checkpoint at gpt2 and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map:   0%|          | 0/7540 [00:00<?, ? examples/s]Map:   0%|          | 0/7540 [00:00<?, ? examples/s]
+Traceback (most recent call last):
+  File "/Users/923673423/lime/daproject/scripts/llm-classification-model.py", line 49, in <module>
+    train_dataset = train_dataset.map(tokenize_function, batched=True)
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/datasets/arrow_dataset.py", line 560, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/datasets/arrow_dataset.py", line 3055, in map
+    for rank, done, content in Dataset._map_single(**dataset_kwargs):
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/datasets/arrow_dataset.py", line 3458, in _map_single
+    batch = apply_function_on_filtered_inputs(
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/datasets/arrow_dataset.py", line 3320, in apply_function_on_filtered_inputs
+    processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
+  File "/Users/923673423/lime/daproject/scripts/llm-classification-model.py", line 47, in tokenize_function
+    return tokenizer(examples["text"], padding="max_length", truncation=True, max_length=512)
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/transformers/tokenization_utils_base.py", line 2860, in __call__
+    encodings = self._call_one(text=text, text_pair=text_pair, **all_kwargs)
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/transformers/tokenization_utils_base.py", line 2948, in _call_one
+    return self.batch_encode_plus(
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/transformers/tokenization_utils_base.py", line 3141, in batch_encode_plus
+    padding_strategy, truncation_strategy, max_length, kwargs = self._get_padding_truncation_strategies(
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/transformers/tokenization_utils_base.py", line 2762, in _get_padding_truncation_strategies
+    raise ValueError(
+ValueError: Asking to pad but the tokenizer does not have a padding token. Please select a token to use as `pad_token` `(tokenizer.pad_token = tokenizer.eos_token e.g.)` or add a new pad token via `tokenizer.add_special_tokens({'pad_token': '[PAD]'})`.

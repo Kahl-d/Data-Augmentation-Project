@@ -1,0 +1,74 @@
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: mehtabkhalid2501 (mehtabkhalid2501-san-francisco-state-university). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /Users/923673423/.netrc
+/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/transformers/convert_slow_tokenizer.py:561: UserWarning: The sentencepiece tokenizer that you are converting to a fast tokenizer uses the byte fallback option which is not implemented in the fast tokenizers. In practice this means that the fast version of the tokenizer can produce unknown tokens whereas the sentencepiece version would have converted these unknown tokens into a sequence of byte tokens matching the original piece of text.
+  warnings.warn(
+Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at /Users/923673423/lime/models/tacit_models/deberta_finetuned_essays and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map:   0%|          | 0/1585 [00:00<?, ? examples/s]Map: 100%|██████████| 1585/1585 [00:00<00:00, 16916.00 examples/s]
+Map:   0%|          | 0/397 [00:00<?, ? examples/s]Map: 100%|██████████| 397/397 [00:00<00:00, 13177.63 examples/s]
+/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/transformers/training_args.py:1575: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+wandb: Tracking run with wandb version 0.19.0
+wandb: Run data is saved locally in /Users/923673423/lime/wandb/run-20241211_223308-oka07jcw
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run perseverance_binary_classification
+wandb: ⭐️ View project at https://wandb.ai/mehtabkhalid2501-san-francisco-state-university/huggingface
+wandb: 🚀 View run at https://wandb.ai/mehtabkhalid2501-san-francisco-state-university/huggingface/runs/oka07jcw
+  0%|          | 0/75 [00:00<?, ?it/s]/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/torch/nn/parallel/_functions.py:71: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(
+  1%|▏         | 1/75 [00:09<11:26,  9.28s/it]  3%|▎         | 2/75 [00:11<06:07,  5.03s/it]  4%|▍         | 3/75 [00:13<04:15,  3.55s/it]  5%|▌         | 4/75 [00:15<03:28,  2.94s/it]  7%|▋         | 5/75 [00:16<02:48,  2.40s/it]  8%|▊         | 6/75 [00:18<02:39,  2.32s/it]  9%|▉         | 7/75 [00:20<02:34,  2.27s/it] 11%|█         | 8/75 [00:22<02:18,  2.07s/it] 12%|█▏        | 9/75 [00:24<02:10,  1.97s/it] 13%|█▎        | 10/75 [00:26<02:10,  2.00s/it] 15%|█▍        | 11/75 [00:28<02:06,  1.98s/it] 16%|█▌        | 12/75 [00:29<01:58,  1.88s/it] 17%|█▋        | 13/75 [00:31<01:47,  1.73s/it] 19%|█▊        | 14/75 [00:33<01:48,  1.78s/it] 20%|██        | 15/75 [00:34<01:38,  1.64s/it] 21%|██▏       | 16/75 [00:36<01:34,  1.61s/it] 23%|██▎       | 17/75 [00:37<01:33,  1.61s/it] 24%|██▍       | 18/75 [00:39<01:37,  1.70s/it] 25%|██▌       | 19/75 [00:41<01:31,  1.63s/it] 27%|██▋       | 20/75 [00:42<01:26,  1.57s/it] 28%|██▊       | 21/75 [00:43<01:23,  1.54s/it] 29%|██▉       | 22/75 [00:45<01:22,  1.56s/it] 31%|███       | 23/75 [00:46<01:17,  1.48s/it] 32%|███▏      | 24/75 [00:48<01:16,  1.50s/it] 33%|███▎      | 25/75 [00:49<01:12,  1.44s/it]
+  0%|          | 0/7 [00:00<?, ?it/s][A
+ 29%|██▊       | 2/7 [00:00<00:01,  3.54it/s][A
+ 43%|████▎     | 3/7 [00:01<00:01,  2.63it/s][A
+ 57%|█████▋    | 4/7 [00:01<00:01,  2.13it/s][A
+ 71%|███████▏  | 5/7 [00:02<00:00,  2.02it/s][A
+ 86%|████████▌ | 6/7 [00:02<00:00,  1.96it/s][A
+100%|██████████| 7/7 [00:03<00:00,  1.84it/s][A                                               
+                                             [A 33%|███▎      | 25/75 [00:54<01:12,  1.44s/it]
+100%|██████████| 7/7 [00:03<00:00,  1.84it/s][A
+                                             [ATraceback (most recent call last):
+  File "/Users/923673423/lime/scripts/tacit_scripts/classification_model.py", line 109, in <module>
+    trainer.train()
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/transformers/trainer.py", line 2616, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval, start_time)
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/transformers/trainer.py", line 3054, in _maybe_log_save_evaluate
+    self._save_checkpoint(model, trial)
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/transformers/trainer.py", line 3186, in _save_checkpoint
+    self.save_model(output_dir, _internal_call=True)
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/transformers/trainer.py", line 3806, in save_model
+    self._save(output_dir)
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/transformers/trainer.py", line 3910, in _save
+    self.model.save_pretrained(
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/transformers/modeling_utils.py", line 2827, in save_pretrained
+    model_to_save.config.save_pretrained(save_directory)
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/transformers/configuration_utils.py", line 418, in save_pretrained
+    self.to_json_file(output_config_file, use_diff=True)
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/transformers/configuration_utils.py", line 935, in to_json_file
+    writer.write(self.to_json_string(use_diff=use_diff))
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/transformers/configuration_utils.py", line 921, in to_json_string
+    return json.dumps(config_dict, indent=2, sort_keys=True) + "\n"
+  File "/usr/lib64/python3.9/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib64/python3.9/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/usr/lib64/python3.9/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/lib64/python3.9/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib64/python3.9/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/usr/lib64/python3.9/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type CrossEntropyLoss is not JSON serializable

@@ -1,0 +1,22 @@
+{'eval_loss': 0.7437819242477417, 'eval_runtime': 5.1492, 'eval_samples_per_second': 77.1, 'eval_steps_per_second': 1.359, 'epoch': 1.0}
+{'eval_loss': 0.73824143409729, 'eval_runtime': 4.5842, 'eval_samples_per_second': 86.602, 'eval_steps_per_second': 1.527, 'epoch': 2.0}
+{'eval_loss': 0.7290867567062378, 'eval_runtime': 5.4515, 'eval_samples_per_second': 72.824, 'eval_steps_per_second': 1.284, 'epoch': 3.0}
+{'train_runtime': 160.421, 'train_samples_per_second': 29.641, 'train_steps_per_second': 0.468, 'train_loss': 0.7389461263020833, 'epoch': 3.0}
+Evaluation Results: {'eval_loss': 0.7290867567062378, 'eval_runtime': 4.3449, 'eval_samples_per_second': 91.372, 'eval_steps_per_second': 1.611, 'epoch': 3.0}
+
+Test Set Confusion Matrix:
+[[  0 375]
+ [  0  22]]
+
+Test Set Classification Report:
+              precision    recall  f1-score   support
+
+     Non-CCT       0.00      0.00      0.00       375
+         CCT       0.06      1.00      0.11        22
+
+    accuracy                           0.06       397
+   macro avg       0.03      0.50      0.05       397
+weighted avg       0.00      0.06      0.01       397
+
+[1;34mwandb[0m: 🚀 View run [33mperseverance_binary_classification[0m at: [34mhttps://wandb.ai/mehtabkhalid2501-san-francisco-state-university/huggingface/runs/b6tfgjev[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20241211_222557-b6tfgjev/logs[0m

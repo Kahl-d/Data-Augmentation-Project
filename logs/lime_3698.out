@@ -1,0 +1,8 @@
+{'loss': 6.7426, 'grad_norm': 7.381316661834717, 'learning_rate': 2e-05, 'epoch': 2.36}
+{'loss': 3.2984, 'grad_norm': 6.462422847747803, 'learning_rate': 2.1428571428571427e-06, 'epoch': 4.72}
+{'eval_loss': 2.9084198474884033, 'eval_runtime': 35.3132, 'eval_samples_per_second': 85.237, 'eval_steps_per_second': 0.68, 'epoch': 4.72}
+{'train_runtime': 2238.1805, 'train_samples_per_second': 60.502, 'train_steps_per_second': 0.474, 'train_loss': 4.908211459753648, 'epoch': 5.0}
+Perplexity: 17.452060663005863
+[{'score': 0.11181075125932693, 'token': 408, 'token_str': 'help', 'sequence': 'I am here because I want to help in life and help my family.'}, {'score': 0.06454542279243469, 'token': 3665, 'token_str': 'graduate', 'sequence': 'I am here because I want to graduate in life and help my family.'}, {'score': 0.057466499507427216, 'token': 799, 'token_str': 'learn', 'sequence': 'I am here because I want to learn in life and help my family.'}, {'score': 0.04318580403923988, 'token': 374, 'token_str': 'work', 'sequence': 'I am here because I want to work in life and help my family.'}, {'score': 0.0353751964867115, 'token': 1618, 'token_str': 'grow', 'sequence': 'I am here because I want to grow in life and help my family.'}]
+[1;34mwandb[0m: 🚀 View run [33mdeberta_finetuning_task[0m at: [34mhttps://wandb.ai/mehtabkhalid2501-san-francisco-state-university/huggingface/runs/11smpyot[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20241211_204727-11smpyot/logs[0m

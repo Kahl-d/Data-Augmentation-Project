@@ -1,0 +1,11 @@
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: mehtabkhalid2501 (mehtabkhalid2501-san-francisco-state-university). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /Users/923673423/.netrc
+/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/transformers/convert_slow_tokenizer.py:561: UserWarning: The sentencepiece tokenizer that you are converting to a fast tokenizer uses the byte fallback option which is not implemented in the fast tokenizers. In practice this means that the fast version of the tokenizer can produce unknown tokens whereas the sentencepiece version would have converted these unknown tokens into a sequence of byte tokens matching the original piece of text.
+  warnings.warn(
+Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at /Users/923673423/lime/models/tacit_models/deberta_finetuned_essays and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Traceback (most recent call last):
+  File "/Users/923673423/lime/scripts/tacit_scripts/classification_model.py", line 50, in <module>
+    model.config.loss = CrossEntropyLoss(weight=class_weights)
+NameError: name 'class_weights' is not defined

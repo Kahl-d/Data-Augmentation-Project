@@ -1,0 +1,4 @@
+ERROR: Unable to locate a modulefile for 'cuda/12.4'
+/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.

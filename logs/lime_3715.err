@@ -1,0 +1,83 @@
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: mehtabkhalid2501 (mehtabkhalid2501-san-francisco-state-university). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /Users/923673423/.netrc
+/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/transformers/convert_slow_tokenizer.py:561: UserWarning: The sentencepiece tokenizer that you are converting to a fast tokenizer uses the byte fallback option which is not implemented in the fast tokenizers. In practice this means that the fast version of the tokenizer can produce unknown tokens whereas the sentencepiece version would have converted these unknown tokens into a sequence of byte tokens matching the original piece of text.
+  warnings.warn(
+Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at /Users/923673423/lime/models/tacit_models/deberta_finetuned_essays and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map:   0%|          | 0/1585 [00:00<?, ? examples/s]Map: 100%|██████████| 1585/1585 [00:00<00:00, 17805.94 examples/s]
+Map:   0%|          | 0/397 [00:00<?, ? examples/s]Map: 100%|██████████| 397/397 [00:00<00:00, 16215.20 examples/s]
+/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/transformers/training_args.py:1575: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+wandb: Tracking run with wandb version 0.19.0
+wandb: Run data is saved locally in /Users/923673423/lime/wandb/run-20241211_221411-0jzbxzix
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run perseverance_binary_classification
+wandb: ⭐️ View project at https://wandb.ai/mehtabkhalid2501-san-francisco-state-university/huggingface
+wandb: 🚀 View run at https://wandb.ai/mehtabkhalid2501-san-francisco-state-university/huggingface/runs/0jzbxzix
+  0%|          | 0/75 [00:00<?, ?it/s]/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/torch/nn/parallel/_functions.py:71: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(
+  1%|▏         | 1/75 [00:09<11:46,  9.54s/it]  3%|▎         | 2/75 [00:10<05:48,  4.78s/it]  4%|▍         | 3/75 [00:12<03:53,  3.25s/it]  5%|▌         | 4/75 [00:13<02:57,  2.50s/it]  7%|▋         | 5/75 [00:15<02:26,  2.09s/it]  8%|▊         | 6/75 [00:16<02:09,  1.87s/it]  9%|▉         | 7/75 [00:17<01:52,  1.65s/it] 11%|█         | 8/75 [00:19<01:46,  1.60s/it] 12%|█▏        | 9/75 [00:20<01:41,  1.53s/it] 13%|█▎        | 10/75 [00:21<01:35,  1.47s/it] 15%|█▍        | 11/75 [00:23<01:32,  1.45s/it] 16%|█▌        | 12/75 [00:25<01:38,  1.56s/it] 17%|█▋        | 13/75 [00:27<01:46,  1.72s/it] 19%|█▊        | 14/75 [00:29<01:51,  1.83s/it] 20%|██        | 15/75 [00:31<01:55,  1.93s/it] 21%|██▏       | 16/75 [00:33<01:54,  1.95s/it] 23%|██▎       | 17/75 [00:35<01:49,  1.89s/it] 24%|██▍       | 18/75 [00:36<01:38,  1.73s/it] 25%|██▌       | 19/75 [00:38<01:35,  1.70s/it] 27%|██▋       | 20/75 [00:39<01:29,  1.63s/it] 28%|██▊       | 21/75 [00:41<01:25,  1.58s/it] 29%|██▉       | 22/75 [00:42<01:22,  1.55s/it] 31%|███       | 23/75 [00:44<01:18,  1.51s/it] 32%|███▏      | 24/75 [00:45<01:14,  1.46s/it] 33%|███▎      | 25/75 [00:46<01:11,  1.42s/it]
+  0%|          | 0/7 [00:00<?, ?it/s][A
+ 29%|██▊       | 2/7 [00:00<00:01,  2.94it/s][A
+ 43%|████▎     | 3/7 [00:01<00:02,  1.57it/s][A
+ 57%|█████▋    | 4/7 [00:02<00:01,  1.63it/s][A
+ 71%|███████▏  | 5/7 [00:02<00:01,  1.68it/s][A
+ 86%|████████▌ | 6/7 [00:03<00:00,  1.66it/s][A
+100%|██████████| 7/7 [00:03<00:00,  1.76it/s][A                                               
+                                             [A 33%|███▎      | 25/75 [00:51<01:11,  1.42s/it]
+100%|██████████| 7/7 [00:04<00:00,  1.76it/s][A
+                                             [A/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/torch/nn/parallel/_functions.py:71: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(
+ 35%|███▍      | 26/75 [00:58<03:37,  4.44s/it] 36%|███▌      | 27/75 [00:59<02:49,  3.52s/it] 37%|███▋      | 28/75 [01:01<02:22,  3.03s/it] 39%|███▊      | 29/75 [01:02<01:56,  2.53s/it] 40%|████      | 30/75 [01:04<01:38,  2.18s/it] 41%|████▏     | 31/75 [01:05<01:25,  1.95s/it] 43%|████▎     | 32/75 [01:07<01:17,  1.80s/it] 44%|████▍     | 33/75 [01:08<01:16,  1.82s/it] 45%|████▌     | 34/75 [01:11<01:18,  1.91s/it] 47%|████▋     | 35/75 [01:13<01:19,  1.99s/it] 48%|████▊     | 36/75 [01:14<01:13,  1.89s/it] 49%|████▉     | 37/75 [01:16<01:04,  1.70s/it] 51%|█████     | 38/75 [01:17<01:02,  1.69s/it] 52%|█████▏    | 39/75 [01:19<01:02,  1.74s/it] 53%|█████▎    | 40/75 [01:21<01:00,  1.74s/it] 55%|█████▍    | 41/75 [01:22<00:53,  1.58s/it] 56%|█████▌    | 42/75 [01:24<00:54,  1.64s/it] 57%|█████▋    | 43/75 [01:25<00:49,  1.56s/it] 59%|█████▊    | 44/75 [01:27<00:49,  1.59s/it] 60%|██████    | 45/75 [01:28<00:46,  1.54s/it] 61%|██████▏   | 46/75 [01:30<00:43,  1.50s/it] 63%|██████▎   | 47/75 [01:31<00:39,  1.41s/it] 64%|██████▍   | 48/75 [01:32<00:38,  1.41s/it] 65%|██████▌   | 49/75 [01:34<00:37,  1.44s/it] 67%|██████▋   | 50/75 [01:35<00:33,  1.36s/it]
+  0%|          | 0/7 [00:00<?, ?it/s][A
+ 29%|██▊       | 2/7 [00:00<00:01,  2.92it/s][A
+ 43%|████▎     | 3/7 [00:01<00:01,  2.09it/s][A
+ 57%|█████▋    | 4/7 [00:02<00:01,  1.79it/s][A
+ 71%|███████▏  | 5/7 [00:02<00:01,  1.70it/s][A
+ 86%|████████▌ | 6/7 [00:03<00:00,  1.59it/s][A
+100%|██████████| 7/7 [00:04<00:00,  1.43it/s][A                                               
+                                             [A 67%|██████▋   | 50/75 [01:40<00:33,  1.36s/it]
+100%|██████████| 7/7 [00:04<00:00,  1.43it/s][A
+                                             [A/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/torch/nn/parallel/_functions.py:71: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(
+ 68%|██████▊   | 51/75 [01:46<01:42,  4.25s/it] 69%|██████▉   | 52/75 [01:48<01:19,  3.44s/it] 71%|███████   | 53/75 [01:49<01:02,  2.85s/it] 72%|███████▏  | 54/75 [01:51<00:53,  2.55s/it] 73%|███████▎  | 55/75 [01:52<00:44,  2.20s/it] 75%|███████▍  | 56/75 [01:54<00:39,  2.06s/it] 76%|███████▌  | 57/75 [01:55<00:33,  1.84s/it] 77%|███████▋  | 58/75 [01:57<00:30,  1.78s/it] 79%|███████▊  | 59/75 [01:59<00:27,  1.74s/it] 80%|████████  | 60/75 [02:01<00:27,  1.85s/it] 81%|████████▏ | 61/75 [02:03<00:25,  1.82s/it] 83%|████████▎ | 62/75 [02:04<00:21,  1.69s/it] 84%|████████▍ | 63/75 [02:05<00:19,  1.62s/it] 85%|████████▌ | 64/75 [02:07<00:18,  1.67s/it] 87%|████████▋ | 65/75 [02:09<00:16,  1.70s/it] 88%|████████▊ | 66/75 [02:10<00:14,  1.61s/it] 89%|████████▉ | 67/75 [02:12<00:12,  1.55s/it] 91%|█████████ | 68/75 [02:14<00:11,  1.65s/it] 92%|█████████▏| 69/75 [02:15<00:09,  1.59s/it] 93%|█████████▎| 70/75 [02:16<00:07,  1.52s/it] 95%|█████████▍| 71/75 [02:18<00:05,  1.45s/it] 96%|█████████▌| 72/75 [02:19<00:04,  1.55s/it] 97%|█████████▋| 73/75 [02:22<00:03,  1.70s/it] 99%|█████████▊| 74/75 [02:23<00:01,  1.64s/it]100%|██████████| 75/75 [02:24<00:00,  1.56s/it]/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/torch/nn/parallel/_functions.py:71: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(
+
+  0%|          | 0/7 [00:00<?, ?it/s][A
+ 29%|██▊       | 2/7 [00:00<00:01,  3.30it/s][A
+ 43%|████▎     | 3/7 [00:01<00:01,  2.49it/s][A
+ 57%|█████▋    | 4/7 [00:01<00:01,  2.08it/s][A
+ 71%|███████▏  | 5/7 [00:02<00:01,  1.96it/s][A
+ 86%|████████▌ | 6/7 [00:02<00:00,  1.93it/s][A
+100%|██████████| 7/7 [00:03<00:00,  2.04it/s][A                                               
+                                             [A100%|██████████| 75/75 [02:33<00:00,  1.56s/it]
+100%|██████████| 7/7 [00:03<00:00,  2.04it/s][A
+                                             [A                                               100%|██████████| 75/75 [02:38<00:00,  1.56s/it]100%|██████████| 75/75 [02:38<00:00,  2.12s/it]
+/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/torch/nn/parallel/_functions.py:71: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(
+  0%|          | 0/7 [00:00<?, ?it/s] 29%|██▊       | 2/7 [00:00<00:01,  3.59it/s] 43%|████▎     | 3/7 [00:01<00:01,  2.56it/s] 57%|█████▋    | 4/7 [00:01<00:01,  2.17it/s] 71%|███████▏  | 5/7 [00:02<00:01,  1.98it/s] 86%|████████▌ | 6/7 [00:02<00:00,  1.92it/s]100%|██████████| 7/7 [00:03<00:00,  2.00it/s]100%|██████████| 7/7 [00:03<00:00,  2.11it/s]
+  0%|          | 0/7 [00:00<?, ?it/s] 29%|██▊       | 2/7 [00:01<00:02,  1.97it/s] 43%|████▎     | 3/7 [00:02<00:02,  1.40it/s] 57%|█████▋    | 4/7 [00:03<00:02,  1.20it/s] 71%|███████▏  | 5/7 [00:04<00:01,  1.11it/s] 86%|████████▌ | 6/7 [00:05<00:00,  1.06it/s]100%|██████████| 7/7 [00:05<00:00,  1.24it/s]100%|██████████| 7/7 [00:05<00:00,  1.24it/s]
+/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))

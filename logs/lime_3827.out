@@ -1,0 +1,20 @@
+Using device: cuda
+Original Row: {'Gender': 2.0, 'Age': 38.0, 'Household Size': 2.0, 'Income Poverty Ratio': 0.67, 'BMI': 18.14, 'Diet Question': 1.0, 'Diet Question Annotation': 0.0, 'Smoking Status': 2.0, 'General Health Status': 3.0, 'Restaurant Visits': 0.0, 'Protein Intake': 75.0, 'Healthy Food Intake': 55.0, 'Unhealthy Food Intake': 129.0, 'Beverage Consumption': 8.0, 'Milk Consumption': 7.0, 'Physical Activity Status': 0.0}
+Prompt with Masks: Gender: [MASK], Age: 38.0, Household Size: 2.0, Income Poverty Ratio: [MASK], BMI: 18.14, Diet Question: 1.0, Diet Question Annotation: 0.0, Smoking Status: [MASK], General Health Status: 3.0, Restaurant Visits: 0.0, Protein Intake: [MASK], Healthy Food Intake: 55.0, Unhealthy Food Intake: [MASK], Beverage Consumption: 8.0, Milk Consumption: 7.0, Physical Activity Status: 0.0
+Inputs before moving to device: {'input_ids': tensor([[41394,    25,   685, 31180,    42,  4357,  7129,    25,  4353,    13,
+            15,    11, 37306, 12849,    25,   362,    13,    15,    11, 19003,
+         30627, 33956,    25,   685, 31180,    42,  4357, 22456,    25,  1248,
+            13,  1415,    11, 16292, 18233,    25,   352,    13,    15,    11,
+         16292, 18233,  1052, 38983,    25,   657,    13,    15,    11, 39801,
+         12678,    25,   685, 31180,    42,  4357,  3611,  3893, 12678,    25,
+           513,    13,    15,    11, 26078,  6911,   896,    25,   657,    13,
+            15,    11, 31702, 48885,    25,   685, 31180,    42,  4357, 30840,
+          7318, 48885,    25,  5996,    13,    15,    11,   791, 22796,  7318,
+         48885,    25,   685, 31180,    42,  4357, 22185,   496, 42158,    25,
+           807,    13,    15,    11, 24796, 42158,    25,   767,    13,    15,
+            11, 16331, 24641, 12678,    25,   657,    13,    15]]), 'attention_mask': tensor([[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]])}
+Prediction: Gender: [MASK], Age: 38.0, Household Size: 2.0, Income Poverty Ratio: [MASK], BMI: 18.14, Diet Question: 1.0, Diet Question Annotation: 0.0, Smoking Status: [MASK], General Health Status: 3.0, Restaurant Visits: 0.0, Protein Intake: [MASK], Healthy Food Intake: 55.0, Unhealthy Food Intake: [MASK], Beverage Consumption: 8.0, Milk Consumption: 7.0, Physical Activity Status: 0.0 Gender: 2.0, Age: 38.

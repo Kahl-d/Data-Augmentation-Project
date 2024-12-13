@@ -1,0 +1,60 @@
+Map:   0%|          | 0/7540 [00:00<?, ? examples/s]Map:  76%|███████▌  | 5721/7540 [00:00<00:00, 57009.43 examples/s]Map: 100%|██████████| 7540/7540 [00:00<00:00, 17082.98 examples/s]
+Map:   0%|          | 0/5028 [00:00<?, ? examples/s]Map: 100%|██████████| 5028/5028 [00:00<00:00, 54634.47 examples/s]
+Some weights of GPT2ForSequenceClassification were not initialized from the model checkpoint at gpt2 and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+Map:   0%|          | 0/7540 [00:00<?, ? examples/s]Map:  13%|█▎        | 1000/7540 [00:00<00:01, 6183.82 examples/s]Map:  27%|██▋       | 2000/7540 [00:00<00:00, 7609.54 examples/s]Map:  40%|███▉      | 3000/7540 [00:00<00:01, 3800.00 examples/s]Map:  53%|█████▎    | 4000/7540 [00:00<00:00, 4904.31 examples/s]Map:  66%|██████▋   | 5000/7540 [00:00<00:00, 5873.13 examples/s]Map:  80%|███████▉  | 6000/7540 [00:01<00:00, 6651.67 examples/s]Map:  93%|█████████▎| 7000/7540 [00:01<00:00, 4252.02 examples/s]Map: 100%|██████████| 7540/7540 [00:01<00:00, 5015.17 examples/s]
+Map:   0%|          | 0/5028 [00:00<?, ? examples/s]Map:  20%|█▉        | 1000/5028 [00:00<00:00, 9040.31 examples/s]Map:  40%|███▉      | 2000/5028 [00:00<00:00, 3433.23 examples/s]Map:  60%|█████▉    | 3000/5028 [00:01<00:00, 2299.49 examples/s]Map:  80%|███████▉  | 4000/5028 [00:01<00:00, 2308.73 examples/s]Map:  99%|█████████▉| 5000/5028 [00:01<00:00, 3148.64 examples/s]Map: 100%|██████████| 5028/5028 [00:01<00:00, 2980.93 examples/s]
+/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/transformers/training_args.py:1575: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+/Users/923673423/lime/daproject/scripts/gpt-model.py:87: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `Trainer.__init__`. Use `processing_class` instead.
+  trainer = Trainer(
+Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+  0%|          | 0/354 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/Users/923673423/lime/daproject/scripts/gpt-model.py", line 97, in <module>
+    trainer.train()
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/transformers/trainer.py", line 2522, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/transformers/trainer.py", line 3655, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/transformers/trainer.py", line 3709, in compute_loss
+    outputs = model(**inputs)
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/torch/nn/parallel/data_parallel.py", line 193, in forward
+    outputs = self.parallel_apply(replicas, inputs, module_kwargs)
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/torch/nn/parallel/data_parallel.py", line 212, in parallel_apply
+    return parallel_apply(
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/torch/nn/parallel/parallel_apply.py", line 126, in parallel_apply
+    output.reraise()
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/torch/_utils.py", line 715, in reraise
+    raise exception
+AssertionError: Caught AssertionError in replica 0 on device 0.
+Original Traceback (most recent call last):
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/torch/nn/parallel/parallel_apply.py", line 96, in _worker
+    output = module(*input, **kwargs)
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 1607, in forward
+    assert (
+AssertionError: Cannot handle batch sizes > 1 if no padding token is defined.
+
+  0%|          | 0/354 [00:05<?, ?it/s]

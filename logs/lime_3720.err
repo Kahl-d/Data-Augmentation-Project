@@ -1,0 +1,36 @@
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: mehtabkhalid2501 (mehtabkhalid2501-san-francisco-state-university). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /Users/923673423/.netrc
+/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/transformers/convert_slow_tokenizer.py:561: UserWarning: The sentencepiece tokenizer that you are converting to a fast tokenizer uses the byte fallback option which is not implemented in the fast tokenizers. In practice this means that the fast version of the tokenizer can produce unknown tokens whereas the sentencepiece version would have converted these unknown tokens into a sequence of byte tokens matching the original piece of text.
+  warnings.warn(
+Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at /Users/923673423/lime/models/tacit_models/deberta_finetuned_essays and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map:   0%|          | 0/1585 [00:00<?, ? examples/s]Map: 100%|██████████| 1585/1585 [00:00<00:00, 16258.07 examples/s]
+Map:   0%|          | 0/397 [00:00<?, ? examples/s]Map: 100%|██████████| 397/397 [00:00<00:00, 14868.90 examples/s]
+/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/transformers/training_args.py:1575: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+wandb: Tracking run with wandb version 0.19.0
+wandb: Run data is saved locally in /Users/923673423/lime/wandb/run-20241211_223952-adzj27vx
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run perseverance_binary_classification
+wandb: ⭐️ View project at https://wandb.ai/mehtabkhalid2501-san-francisco-state-university/huggingface
+wandb: 🚀 View run at https://wandb.ai/mehtabkhalid2501-san-francisco-state-university/huggingface/runs/adzj27vx
+  0%|          | 0/125 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/Users/923673423/lime/scripts/tacit_scripts/classification_model.py", line 114, in <module>
+    trainer.train()
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/transformers/trainer.py", line 2522, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/transformers/trainer.py", line 3655, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+TypeError: compute_loss() got an unexpected keyword argument 'num_items_in_batch'

@@ -1,0 +1,22 @@
+{'eval_loss': 0.6666677594184875, 'eval_runtime': 7.5515, 'eval_samples_per_second': 101.569, 'eval_steps_per_second': 1.589, 'epoch': 1.0}
+{'eval_loss': 0.40772581100463867, 'eval_runtime': 8.9613, 'eval_samples_per_second': 85.59, 'eval_steps_per_second': 1.339, 'epoch': 2.0}
+{'eval_loss': 0.30721840262413025, 'eval_runtime': 8.1322, 'eval_samples_per_second': 94.317, 'eval_steps_per_second': 1.476, 'epoch': 3.0}
+{'train_runtime': 333.7541, 'train_samples_per_second': 27.568, 'train_steps_per_second': 0.431, 'train_loss': 0.532940599653456, 'epoch': 3.0}
+Evaluation Results: {'eval_loss': 0.30721840262413025, 'eval_runtime': 8.4373, 'eval_samples_per_second': 90.906, 'eval_steps_per_second': 1.422, 'epoch': 3.0}
+
+Test Set Confusion Matrix:
+[[537  57]
+ [ 34 139]]
+
+Test Set Classification Report:
+              precision    recall  f1-score   support
+
+     Non-CCT       0.94      0.90      0.92       594
+         CCT       0.71      0.80      0.75       173
+
+    accuracy                           0.88       767
+   macro avg       0.82      0.85      0.84       767
+weighted avg       0.89      0.88      0.88       767
+
+[1;34mwandb[0m: 🚀 View run [33mattainment_binary_classification[0m at: [34mhttps://wandb.ai/mehtabkhalid2501-san-francisco-state-university/huggingface/runs/gc6pkuja[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20241211_220512-gc6pkuja/logs[0m

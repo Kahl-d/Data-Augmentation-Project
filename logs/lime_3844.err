@@ -1,0 +1,19 @@
+ERROR: Unable to locate a modulefile for 'cuda/12.4'
+Some weights of DebertaV2ForMaskedLM were not initialized from the model checkpoint at microsoft/deberta-v3-large and are newly initialized: ['cls.predictions.bias', 'cls.predictions.decoder.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map:   0%|          | 0/22620 [00:00<?, ? examples/s]Map:   4%|▍         | 1000/22620 [00:00<00:05, 3687.74 examples/s]Map:   9%|▉         | 2000/22620 [00:00<00:05, 3776.29 examples/s]Map:  13%|█▎        | 3000/22620 [00:00<00:05, 3828.31 examples/s]Map:  18%|█▊        | 4000/22620 [00:01<00:04, 3850.44 examples/s]Map:  22%|██▏       | 5000/22620 [00:01<00:04, 3857.43 examples/s]Map:  27%|██▋       | 6000/22620 [00:01<00:04, 3867.46 examples/s]Map:  31%|███       | 7000/22620 [00:01<00:04, 3881.66 examples/s]Map:  35%|███▌      | 8000/22620 [00:02<00:03, 3880.64 examples/s]Map:  40%|███▉      | 9000/22620 [00:02<00:03, 3895.03 examples/s]Map:  44%|████▍     | 10000/22620 [00:02<00:03, 3894.92 examples/s]Map:  49%|████▊     | 11000/22620 [00:02<00:02, 3889.50 examples/s]Map:  53%|█████▎    | 12000/22620 [00:03<00:02, 3891.69 examples/s]Map:  57%|█████▋    | 13000/22620 [00:03<00:02, 3896.26 examples/s]Map:  62%|██████▏   | 14000/22620 [00:03<00:02, 3887.08 examples/s]Map:  66%|██████▋   | 15000/22620 [00:03<00:01, 3895.84 examples/s]Map:  71%|███████   | 16000/22620 [00:04<00:01, 3890.66 examples/s]Map:  75%|███████▌  | 17000/22620 [00:04<00:01, 3886.62 examples/s]Map:  80%|███████▉  | 18000/22620 [00:04<00:01, 3890.81 examples/s]Map:  84%|████████▍ | 19000/22620 [00:04<00:00, 3898.43 examples/s]Map:  88%|████████▊ | 20000/22620 [00:05<00:00, 3887.14 examples/s]Map:  93%|█████████▎| 21000/22620 [00:05<00:00, 3893.27 examples/s]Map:  97%|█████████▋| 22000/22620 [00:05<00:00, 3882.98 examples/s]Map: 100%|██████████| 22620/22620 [00:05<00:00, 3885.65 examples/s]Map: 100%|██████████| 22620/22620 [00:05<00:00, 3877.66 examples/s]
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: mehtabkhalid2501. Use `wandb login --relogin` to force relogin
+wandb: ERROR failed to upsert bucket: returned error 404 Not Found: {"errors":[{"message":"entity your-wandb-account not found during upsertBucket","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+Traceback (most recent call last):
+  File "/Users/923673423/lime/daproject/scripts/d3-perturb-model.py", line 58, in <module>
+    wandb.init(project="deberta-mlm-optimization", entity="your-wandb-account")
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/wandb/sdk/wandb_init.py", line 1319, in init
+    wandb._sentry.reraise(e)
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/wandb/analytics/sentry.py", line 156, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/wandb/sdk/wandb_init.py", line 1305, in init
+    return wi.init()
+  File "/Users/923673423/lime/environments/lime_env_39/lib64/python3.9/site-packages/wandb/sdk/wandb_init.py", line 863, in init
+    raise error
+wandb.errors.errors.CommError: failed to upsert bucket: returned error 404 Not Found: {"errors":[{"message":"entity your-wandb-account not found during upsertBucket","path":["upsertBucket"]}],"data":{"upsertBucket":null}}

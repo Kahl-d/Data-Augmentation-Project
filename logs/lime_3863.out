@@ -1,0 +1,6 @@
+{'eval_loss': 0.5311213135719299, 'eval_runtime': 2.6336, 'eval_samples_per_second': 572.608, 'eval_steps_per_second': 9.113, 'epoch': 1.0}
+{'eval_loss': 0.4051254689693451, 'eval_runtime': 2.6155, 'eval_samples_per_second': 576.571, 'eval_steps_per_second': 9.176, 'epoch': 2.0}
+{'eval_loss': 0.3895643353462219, 'eval_runtime': 2.9336, 'eval_samples_per_second': 514.037, 'eval_steps_per_second': 8.181, 'epoch': 3.0}
+{'train_runtime': 69.2187, 'train_samples_per_second': 261.432, 'train_steps_per_second': 4.117, 'train_loss': 0.45729252330043857, 'epoch': 3.0}
+[1;34mwandb[0m: 🚀 View run [33m./results[0m at: [34mhttps://wandb.ai/mehtabkhalid2501-san-francisco-state-university/huggingface/runs/u0w3cxbf[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20241213_134713-u0w3cxbf/logs[0m

@@ -1,0 +1,24 @@
+{'eval_loss': 0.5903419256210327, 'eval_runtime': 5.5531, 'eval_samples_per_second': 138.121, 'eval_steps_per_second': 1.08, 'epoch': 1.0}
+{'eval_loss': 0.5707846283912659, 'eval_runtime': 4.5368, 'eval_samples_per_second': 169.061, 'eval_steps_per_second': 1.323, 'epoch': 2.0}
+{'eval_loss': 0.5159698724746704, 'eval_runtime': 4.6678, 'eval_samples_per_second': 164.317, 'eval_steps_per_second': 1.285, 'epoch': 3.0}
+{'eval_loss': 0.41717466711997986, 'eval_runtime': 4.5496, 'eval_samples_per_second': 168.587, 'eval_steps_per_second': 1.319, 'epoch': 4.0}
+{'eval_loss': 0.3484790027141571, 'eval_runtime': 4.4085, 'eval_samples_per_second': 173.982, 'eval_steps_per_second': 1.361, 'epoch': 5.0}
+{'train_runtime': 379.7088, 'train_samples_per_second': 40.386, 'train_steps_per_second': 0.316, 'train_loss': 0.5189490000406901, 'epoch': 5.0}
+Evaluation Results: {'eval_loss': 0.3484790027141571, 'eval_runtime': 5.4176, 'eval_samples_per_second': 141.576, 'eval_steps_per_second': 1.108, 'epoch': 5.0}
+
+Test Set Confusion Matrix:
+[[594   0]
+ [173   0]]
+
+Test Set Classification Report:
+              precision    recall  f1-score   support
+
+     Non-CCT       0.77      1.00      0.87       594
+         CCT       0.00      0.00      0.00       173
+
+    accuracy                           0.77       767
+   macro avg       0.39      0.50      0.44       767
+weighted avg       0.60      0.77      0.68       767
+
+[1;34mwandb[0m: 🚀 View run [33mattainment_binary_classification[0m at: [34mhttps://wandb.ai/mehtabkhalid2501-san-francisco-state-university/huggingface/runs/4ejos4z8[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20241211_214958-4ejos4z8/logs[0m
