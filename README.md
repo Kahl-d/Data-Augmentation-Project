@@ -11,6 +11,7 @@ This project solves these issues by:
 
 ---
 
+
 ## How to Run
 
 ### 1. Prepare Your Data
@@ -28,6 +29,7 @@ python scripts/p-perturb-model-train.py --data ./data/train.csv --output ./model
 
 ![image](https://github.com/user-attachments/assets/f245772a-5139-4d21-97d6-8dd3074cb52e)
 
+<img width="1367" alt="Screenshot 2025-01-28 at 11 38 48 AM" src="https://github.com/user-attachments/assets/edebb2ba-686b-4494-9ffa-d17ab99e008f" />
 - **Customizable**: Modify the script to use a different LM (e.g., BERT, RoBERTa).
 
 #### b. Generate Perturbations
