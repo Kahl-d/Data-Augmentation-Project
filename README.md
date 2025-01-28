@@ -107,9 +107,13 @@ python scripts/d-many-perturbations.py --model ./models/fine_tuned_model/ --data
 ---
 
 ## Future Enhancements
-- **Scaling**: Adapt the approach for larger models like GPT and LLaMA.  
-- **Tool Integration**: Incorporate perturbations into tools like LIME and SHAP for enhanced interpretability.  
-- **Domain-Specific Use Cases**: Expand into fields like healthcare, finance, and education for realistic simulations.
+- **Causal Relationships:**: Incorporate causal relationships into the perturbation generation process to enhance dataset quality and interpretability.  
+- **Knowledge Graphs**: Leverage knowledge graphs to ensure contextual integrity and generate more meaningful perturbations based on domain-specific relationships.  
+- **Beyond Tabular Data**: Extend the approach to handle non-tabular datasets such as images, audio, and time-series data, enabling a broader range of applications.
+- **Domain Adaptation**: Focus on robust domain adaptation techniques to fine-tune models for specific use cases, improving data augmentation effectiveness.
+- **Scaling**: Adapt the approach for larger models like GPT and LLaMA to generate highly realistic perturbations.
+- **Tool Integration**: Incorporate perturbations into tools like LIME and SHAP for enhanced interpretability.
+- 
 
 ---
 
